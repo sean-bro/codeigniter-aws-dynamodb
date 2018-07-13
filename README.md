@@ -1,6 +1,6 @@
 # Codeigniter AWS Library
 
-CodeIgniter library for AWS DynamoDB and SES.
+Helper functions for DynamoDB and SES.
 
 ## Installation
 
