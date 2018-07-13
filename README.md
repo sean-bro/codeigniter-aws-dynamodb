@@ -14,7 +14,7 @@ Enter your AWS keys and region in `application/config/aws_sdk.php`.
 
 ## Usage
 
-Load the DynamoDB and SES libraries separately.
+Load the DynamoDB and SES libraries as needed.
 
 ```php
 $this->load->library('aws_dynamodb');
