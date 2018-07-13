@@ -1,4 +1,4 @@
-# codeigniter-aws-library
+# Codeigniter AWS Library
 
 CodeIgniter library for AWS DynamoDB and SES.
 
