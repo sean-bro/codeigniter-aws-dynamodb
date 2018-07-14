@@ -23,7 +23,7 @@ $this->load->library('aws_ses');
 
 ## DynamoDB Methods
 
-### aws_dynamodb->batchGetItem( str $tableName, array $data, bool $consistentRead=TRUE )
+### batchGetItem( str $tableName, array $data, bool $consistentRead=TRUE )
 
 Get items with multiple hash IDs with a single query, returns Responses object or FALSE on failure. The `$consistent_read` parameter is optional, defaults to TRUE.
 
@@ -39,7 +39,7 @@ $this->aws_dynamodb->batchGetItem(
 );
 ```
 
-### aws_dynamodb->getCount( str $tableName )
+### getCount( str $tableName )
 
 Count the number of items in a table.
 
@@ -47,7 +47,7 @@ Count the number of items in a table.
 $this->aws_dynamodb->getCount('MyTableName');
 ```
 
-### aws_dynamodb->getItem( str $tableName, array $data, bool $consistent_read=TRUE )
+### getItem( str $tableName, array $data, bool $consistent_read=TRUE )
 
 Get a single item from a table, returns Response object or FALSE on failure. The `$consistent_read` parameter is optional, defaults to TRUE.
 
@@ -61,7 +61,7 @@ $this->aws_dynamodb->getItem(
 );
 ```
 
-### aws_dynamodb->putItem( str $tableName, array $data )
+### putItem( str $tableName, array $data )
 
 Insert a single item into a table, returns Response object or FALSE on failure.
 
@@ -79,7 +79,7 @@ $this->aws_dynamodb->putItem(
 
 ## SES Methods
 
-### aws_ses->send( str $from, array $to, str $subject, str $message, array $reply_to )
+### send( str $from, array $to, str $subject, str $message, array $reply_to )
 
 Send an email via SES. The `$to` and `$reply_to` parameters can be an array or string, returns bool on success/failure. The `$reply_to` parameter is optional.
 
